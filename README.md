@@ -36,7 +36,7 @@ First make sure that you have the following installed.
 Now do the following to setup project
 
 ```
-# assuming that the project is already cloned.
+## assuming that the project is already cloned.
 
 cd djlibrary
 
