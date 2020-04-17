@@ -9,7 +9,7 @@ It's extends over the tutorial and uses [Argon Design System](https://www.creati
 
 * ListView
 
-![listview](.snaps/listview.png "ListView for Books")
+![listview](.snaps/listview.png "List View for Books")
 
 * CreateView
 
