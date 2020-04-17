@@ -68,6 +68,3 @@ cd src
 python manage.py runserver
 ```
 
-## Credits
-
-Special Thanks to [Creative Tim](https://www.creative-tim.com/) for awesome [Argon Design System](https://www.creative-tim.com/product/argon-design-system)
