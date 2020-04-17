@@ -48,11 +48,6 @@ source pyenv/bin/activate
 # one time or whenever any new package is added.
 pip install -r requirements/dev.txt
 
-# update settings
-cp src/djlibrary/settings/local.sample.env src/djlibrary/settings/local.env
-
-# generate a secret key or skip(has a default value) and then replace the value of `SECRET_KEY` in environment file(here local.env)
-./scripts/generate_secret_key.sh
 
 # update relevant variables in environment file
 
