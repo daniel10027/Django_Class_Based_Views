@@ -1,5 +1,5 @@
 
-# djlibrary
+
 
 This project is built using Django and demonstrates the use of Class Based Views using [Class Based Views in Django](https://medium.com/all-about-django/class-based-views-in-django-89108c1f51fb).
 
