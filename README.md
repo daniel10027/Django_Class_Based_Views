@@ -21,7 +21,7 @@ It's extends over the tutorial and uses [Argon Design System](https://www.creati
 
 * UpdateView
 
-![updateview](.snaps/updateview.png "UpdateView of Book")
+![updateview](.snaps/updateview.png "Update View of Book")
 
 * DeleteView
 
