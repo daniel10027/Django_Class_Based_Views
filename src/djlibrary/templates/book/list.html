@@ -1,0 +1,59 @@
+{% extends "__base.html" %}
+
+{% block page_content %}
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card bg-secondary shadow h-100">
+            <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h3 class="mb-0">List of Books</h3>
+                    </div>
+                    <div class="col-4 text-right">
+                        <a href="{% url 'book-create' %}" class="btn btn-sm btn-success">Create</a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Isbn</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in books %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'book-detail' book.id %}">{{book.id}}</a>
+                        </td>
+                        <td>{{book.name}}</td>
+                        <td>{{book.isbn_number}}</td>
+                        <td class="text-right">
+                            <div class="dropdown">
+                                <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                  <a class="dropdown-item" href="{% url 'book-update' book.id %}">Update</a>
+                                  <a class="dropdown-item" href="{% url 'book-delete' book.id %}">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer py-4">
+            {% if is_paginated %}
+                {% include "_pagination.html" %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
